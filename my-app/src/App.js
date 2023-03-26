@@ -4,6 +4,7 @@ import { Router , Routes , Route} from 'react-router-dom';
 function App() {
   return (
     <Router>
+      {/* <div>Chakra UI</div> */}
      <Routes>
         <Route/>
      </Routes>

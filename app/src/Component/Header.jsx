@@ -45,19 +45,19 @@ const Header = () => {
 
         <DrawerBody>
             <VStack alignItems={"flex-start"}>
-                <Button variant={"ghost"} colorScheme="purple">
+                <Button onClick={onClose} variant={"ghost"} colorScheme="purple">
                     <Link to={'/'}>Home</Link>
                 </Button>
 
-                 <Button variant={"ghost"} colorScheme="purple">
+                 <Button onClick={onClose}  variant={"ghost"} colorScheme="purple">
                     <Link to={'/videos'}>Videos</Link>
                 </Button>
 
-                 <Button variant={"ghost"} colorScheme="purple">
+                 <Button onClick={onClose}  variant={"ghost"} colorScheme="purple">
                     <Link to={'/videos?category=free'}>Free Videos</Link>
                 </Button>
 
-                 <Button variant={"ghost"} colorScheme="purple">
+                 <Button onClick={onClose}  variant={"ghost"} colorScheme="purple">
                     <Link to={'/upload'}>Upload Video</Link>
                 </Button>
             </VStack>
@@ -65,11 +65,11 @@ const Header = () => {
             <HStack pos={"absolute"} bottom={"10"} 
             left={"0"}  width={"full"}
             justifyContent={"space-evenly"}>
-                <Button colorScheme={'purple'}>
+                <Button onClick={onClose}  colorScheme={'purple'}>
                     <Link to={'/login'} >Login</Link>
                 </Button>
 
-                 <Button colorScheme={'purple'} variant={'outline'}>
+                 <Button onClick={onClose}  colorScheme={'purple'} variant={'outline'}>
                     <Link to={'/signup'} >SignUp</Link>
                 </Button>
             </HStack>

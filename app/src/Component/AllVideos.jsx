@@ -13,27 +13,26 @@ const AllVideos = () => {
     'https://player.vimeo.com/progressive_redirect/playback/690770660/rendition/720p?loc=external&oauth2_token_id=1027659655&signature=3a048039957fd878fc72b809b9a0e5f2102eded879a83e00784ecd3ba5123614',
   ];
 
-  const videosdata = [
+  const VideosdataArr = [
     {
-      heading:'Sample Video 1',
-      data:'This is a sample video 1 for testing and demo.Hope you like it'
+      'heading':'Sample Video 1',
+      'data':'This is a sample video 1 for testing and demo.Hope you like it'
     },
 
     {
-      heading:'Sample Video 2',
-      data:'This is a sample video 1 for testing and demo.Hope you like it'
+      'heading':'Sample Video 2',
+      'data':'This is a sample video 1 for testing and demo.Hope you like it'
     },
 
     {
-      heading:'Sample Video 3',
-      data:'This is a sample video 1 for testing and demo.Hope you like it'
+     'heading':'Sample Video 3',
+      'data':'This is a sample video 1 for testing and demo.Hope you like it'
     },
     
   ];
 
-
   const [videosrc,setvideosrc] =useState(videosArr[0]);
-  const [videodata,setvideodata] =useState(videosdata[0]);
+  const [videodata,setvideodata] =useState(VideosdataArr[0]);
 
   return (
    <Stack direction={["column","row"]} h={'100vh'}>
@@ -51,8 +50,10 @@ const AllVideos = () => {
 
   <VStack alignItems={'flex-start'} p={'8'}
   w={'full'} overflowY={'auto'}>
-  <Heading>Sample Video 1</Heading>
-  <Text>This is a sample video for testing and demo.Hope you like it</Text>
+
+    <Heading>Sample Video 1</Heading>
+    <Text>This is a sample video 1 for testing and demo.Hope you like it</Text>
+    
   </VStack>
    </VStack>
 
@@ -61,7 +62,7 @@ const AllVideos = () => {
    w={["full" , "xl"]} alignItems={'stretch'}
    p={"8"} spacing={"8"} overflowY={'auto'}
    >
-
+  
    {
      videosArr.map((items,index)=>(
        <Button colorScheme={'purple'} variant={'ghost'}

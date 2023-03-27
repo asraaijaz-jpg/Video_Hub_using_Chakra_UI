@@ -4,6 +4,7 @@ import { Button } from '@chakra-ui/react';
 import Header from './Component/Header';
 import Home from './Component/Home';
 import Footer from './Component/Footer';
+import Video from './Component/Video';
 
 function App() {
   return (

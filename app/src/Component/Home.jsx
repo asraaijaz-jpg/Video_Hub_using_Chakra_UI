@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-    Box, Image, Heading, Container, VStack, Stack,
-    Text
-} from '@chakra-ui/react';
+import {Box, Image, Heading, Container, VStack, Stack,Text} from '@chakra-ui/react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import img1 from '../Assets/1.jpg';
@@ -60,13 +57,14 @@ const Home = () => {
 
 
             </Carousel>
+            
             <Container minH={'100vh'} maxW={'container.xl'} p="16">
 
                 <Heading textTransform={"uppercase"} py="2" w={"fit-content"}
                     borderBottom={"2px solid"} m="auto">Services</Heading>
 
                 <Stack h={"full"} p={"4"} alignItems={"centre"} direction={['column', 'row']}>
-                    <Image src={img5} filter={"hue-rotate(-130deg)"} h={["40", "400"]} />
+                    <Image src={img5} filter={"hue-rotate(-130deg)"} h={["40", "300"]} />
 
                     <Text letterSpacing={"widest"} lineHeight={"190%"}
                     p={['4','16']} textAlign={"centre"}>

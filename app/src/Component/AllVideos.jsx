@@ -56,7 +56,6 @@ const AllVideos = () => {
    w={["full" , "xl"]} alignItems={'stretch'}
    p={"8"} spacing={"8"} overflowY={'auto'}
    >
-  
         {videodata.map((user,key) => (
           <div>
             <Button>Lecture {key+1}</Button>

@@ -16,7 +16,8 @@ const Footer = () => {
                             borderRadius="none"
                             boder="none"
                             outline="none"
-                            focusborderColor={"none"} />
+                            focusborderColor={"none"} 
+                            w={"75%"}/>
                         <Button
                             p={'0'}
                             colorScheme={"puprle"}

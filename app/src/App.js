@@ -4,7 +4,7 @@ import { Button } from '@chakra-ui/react';
 import Header from './Component/Header';
 import Home from './Component/Home';
 import Footer from './Component/Footer';
-import Video from './Component/Video';
+import AllVideos from './Component/AllVideos';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
     <Header/>
   <Routes>
     <Route path='/' element={<Home/>}/>
+    <Route path='/videos' element={<AllVideos/>}/>
   </Routes>
 
   <Footer/>

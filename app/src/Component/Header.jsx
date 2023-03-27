@@ -14,8 +14,6 @@ import {
 import {BiMenuAltLeft} from 'react-icons/bi';
 import {Link} from 'react-router-dom';
 
-
-
 const Header = () => {
 
     const {isOpen , onOpen , onClose} =useDisclosure();
@@ -62,7 +60,7 @@ const Header = () => {
                 </Button>
             </VStack>
 
-            <HStack pos={"absolute"} bottom={"10"} 
+            <HStack pos={"absolute"} bottom={"15"} 
             left={"0"}  width={"full"}
             justifyContent={"space-evenly"}>
                 <Button onClick={onClose}  colorScheme={'purple'}>

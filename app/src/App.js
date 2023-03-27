@@ -3,6 +3,7 @@ import {BrowserRouter as  Router , Routes , Route} from 'react-router-dom';
 import { Button } from '@chakra-ui/react';
 import Header from './Component/Header';
 import Home from './Component/Home';
+import Footer from './Component/Footer';
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
     <Button colorScheme={'whatsapp'}>Click</Button> */}
 
     <Header/>
-    <Home/>
   <Routes>
-    <Route/>
+    <Route path='/' element={<Home/>}/>
   </Routes>
+
+  <Footer/>
   </Router>
   );
 }

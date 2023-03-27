@@ -16,7 +16,7 @@ const AllVideos = () => {
   const VideosdataArr = [
     {
       'heading':'Sample Video 1',
-      'data':'This is a sample video 1 for testing and demo.Hope you like it'
+      'data':'This is a sample video 1 for testing and demo.Hope you like it',
     },
 
     {

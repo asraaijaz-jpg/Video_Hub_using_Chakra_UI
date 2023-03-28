@@ -12,12 +12,14 @@ import SignUp from './Component/SignUp';
 function App() {
   return (
   <Router>
-    
+
     <Header/>
   <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/videos' element={<AllVideos/>}/>
     <Route path='/upload' element={<Upload/>}/>
+    <Route path='/login' element={<Login/>}/>
+    <Route path='/Signup' element={<SignUp/>}/>
   </Routes>
 
   <Footer/>

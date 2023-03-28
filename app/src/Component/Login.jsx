@@ -8,7 +8,7 @@ const Login = () => {
 
 <form>
 <VStack alignItems={'stretch'} spacing={'8'} w={['full' , '96']} m={'auto'} my={'16'}>
-<Heading>Welcome Back</Heading>
+<Heading alignSelf={'center'}>Welcome Back</Heading>
 
 <Input 
 placeholder={'Email'}

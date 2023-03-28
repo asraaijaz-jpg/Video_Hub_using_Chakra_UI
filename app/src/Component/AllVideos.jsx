@@ -13,65 +13,46 @@ const AllVideos = () => {
     'https://player.vimeo.com/progressive_redirect/playback/690770660/rendition/720p?loc=external&oauth2_token_id=1027659655&signature=3a048039957fd878fc72b809b9a0e5f2102eded879a83e00784ecd3ba5123614',
   ];
 
- 
-  const [videosrc,setvideosrc] =useState(videosArr[0]);
-  const [videodata,setvideodata] =useState([
-    {
-      heading:'Sample Video test1',
-      data:'This is a sample video 1 for testing and demo.Hope you like it',
-      src:'https://player.vimeo.com/external/577442929.hd.mp4?s=95231c8a7fe2066ffb640204591b01a6c326b97c&profile_id=174'
-    },
-    {
-      heading:'Sample Video test2',
-      data:'This is a sample video 1 for testing and demo.Hope you like it',
-      src:'https://player.vimeo.com/external/577442929.hd.mp4?s=95231c8a7fe2066ffb640204591b01a6c326b97c&profile_id=174'
-    }
-  ]);
+  const [videoSrc, setVideoSrc] = useState(videosArr[0]);
 
   return (
-   <Stack direction={["column","row"]} h={'100vh'}>
-   
-   <VStack w={'full'}>
-  <video
-  controls
-  controlsList="nodownload"
-  src={videodata[0].src}
-  style={{
-    width:'100%'
-  }}
-  >
-  </video>
+    <Stack direction={['column', 'row']} h={'100vh'}>
+      <VStack w={'full'}>
+        <video
+          controls
+          controlsList="nodownload"
+          src={videoSrc}
+          style={{
+            width: '100%',
+          }}
+        ></video>
 
-  <VStack alignItems={'flex-start'} p={'8'}
-  w={'full'} overflowY={'auto'}>
-
-    <Heading>{videodata[0].heading}</Heading>
-    <Text>{videodata[0].data}</Text>
-    
-  </VStack>
-   </VStack>
-
-   <VStack
-   w={["full" , "xl"]} alignItems={'stretch'}
-   p={"8"} spacing={"8"} overflowY={'auto'}
-   >
-        {videodata.map((user,key) => (
-          <div>
-            <Button>Lecture {key+1}</Button>
-          </div>
+        <VStack alignItems={'flex-start'} p={'8'} w={'full'} overflowY={'auto'}>
+          <Heading>Sample Video 1</Heading>
+          <Text>
+            This is a sample video for testing and demo. This is called
+            description.
+          </Text>
+        </VStack>
+      </VStack>
+      <VStack
+        w={['full', 'xl']}
+        alignItems={'stretch'}
+        p="8"
+        spacing={'8'}
+        overflowY={'auto'}
+      >
+        {videosArr.map((item, index) => (
+          <Button
+            variant={'ghost'}
+            colorScheme={'purple'}
+            onClick={() => setVideoSrc(item)}
+          >
+            Lecture {index + 1}
+          </Button>
         ))}
-
-   {/* {
-     videodata.map((items,index)=>{
-       <Button colorScheme={'purple'} variant={'ghost'}
-       onClick={()=>setvideodata(items)}
-       >Lecture {index+1}</Button>
-     })
-   } */}
-    </VStack>
-   
-   </Stack>
-  )
-}
-
+      </VStack>
+    </Stack>
+  );
+};
 export default AllVideos

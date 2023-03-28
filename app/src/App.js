@@ -6,14 +6,13 @@ import Home from './Component/Home';
 import Footer from './Component/Footer';
 import AllVideos from './Component/AllVideos';
 import Upload from './Component/Upload';
+import Login from './Component/Login';
+import SignUp from './Component/SignUp';
 
 function App() {
   return (
   <Router>
-    {/* <div>Hello Chakra_UI</div>
-    <Button colorScheme={'facebook'} py={'4'} m={'5'}>Click</Button>
-    <Button colorScheme={'whatsapp'}>Click</Button> */}
-
+    
     <Header/>
   <Routes>
     <Route path='/' element={<Home/>}/>

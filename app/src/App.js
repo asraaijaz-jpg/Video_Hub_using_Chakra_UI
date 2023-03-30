@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as  Router , Routes , Route} from 'react-router-dom';
+import {BrowserRouter as  Router , Routes , Route , HashRouter} from 'react-router-dom';
 import { Button } from '@chakra-ui/react';
 import Header from './Component/Header';
 import Home from './Component/Home';
@@ -11,9 +11,9 @@ import SignUp from './Component/SignUp';
 
 function App() {
   return (
-  <Router>
+<HashRouter basename="/">
 
-    <Header/>
+  <Header/>
   <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/videos' element={<AllVideos/>}/>
@@ -23,7 +23,7 @@ function App() {
   </Routes>
 
   <Footer/>
-  </Router>
+  </HashRouter>
   );
 }
 
